@@ -9,28 +9,26 @@ using System.Xml.Serialization;
 
 namespace ConsoleApplication10
 {
-       
+
     class Program
-    {        
+    {
+
         static void Main(string[] args)
         {
 
-            Items itms = (Items) new XmlManager().Deserializable(typeof(Items), "qwe.xml");
+            Items itms = (Items)new XmlManager().Deserializable(typeof(Items), "qwe.xml");
 
-                    
+
             using (var db = new ItemContext())
             {
-                foreach(var t in itms.Itms)
-                db.Items.Add(t);
-                db.SaveChanges();
+                var a = db.Items.First();
             }
 
             Console.Read();
-
         }
     }
 
 
-   
+
 
 }

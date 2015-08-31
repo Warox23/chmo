@@ -36,8 +36,9 @@ namespace ConsoleApplication10
         public string FirstName { get; set; }
         public string LastName { get; set; }
 
-        public List<position> positionsHistory { get; set; }
-        public List<job> jobHistory { get; set; }
+        
+        public virtual List<position> positionsHistory { get; set; }
+        public virtual List<job> jobHistory { get; set; }
 
         public Item()
         {
@@ -77,6 +78,9 @@ namespace ConsoleApplication10
 
         }
 
+        [XmlIgnore]
+        public virtual Item Item { get; set; }
+
     }
 
     public class job
@@ -100,12 +104,20 @@ namespace ConsoleApplication10
 
         }
 
+        [XmlIgnore]
+        public virtual Item Item { get; set; }
+
     }
 
 
     public class ItemContext : DbContext
     {
-        public ItemContext() : base("DbConnect") { }
+        public ItemContext() 
+            : base("DbConnect") 
+        {
+            this.Configuration.LazyLoadingEnabled = true;
+        }
+
         public DbSet<Item> Items { get; set; }
         public DbSet<job> jobs { get; set; }
         public DbSet<position> positions { get; set; }
