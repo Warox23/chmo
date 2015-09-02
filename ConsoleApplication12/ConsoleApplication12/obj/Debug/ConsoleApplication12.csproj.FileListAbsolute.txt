@@ -7,3 +7,6 @@ c:\users\romka\documents\visual studio 2013\Projects\ConsoleApplication12\Consol
 C:\Users\rkachtc\Desktop\ConsoleApplication12\ConsoleApplication12\bin\Debug\ConsoleApplication12.exe.config
 C:\Users\rkachtc\Desktop\ConsoleApplication12\ConsoleApplication12\obj\Debug\ConsoleApplication12.exe
 C:\Users\rkachtc\Desktop\ConsoleApplication12\ConsoleApplication12\obj\Debug\ConsoleApplication12.pdb
+C:\Users\rkachtc\Documents\GitHub\chmo\ConsoleApplication12\ConsoleApplication12\bin\Debug\ConsoleApplication12.exe.config
+C:\Users\rkachtc\Documents\GitHub\chmo\ConsoleApplication12\ConsoleApplication12\obj\Debug\ConsoleApplication12.exe
+C:\Users\rkachtc\Documents\GitHub\chmo\ConsoleApplication12\ConsoleApplication12\obj\Debug\ConsoleApplication12.pdb
